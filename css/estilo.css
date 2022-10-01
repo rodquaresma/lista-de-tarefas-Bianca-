@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../css/img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Indie Flower', cursive;
+    color: #ae597a;
+    
+}
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 90%;
+    margin: auto auto;
+}
+
+input{
+    height: 60px;
+    width: 80%;
+    font-size: 2rem;
+    padding-left: 10%;
+    border: none;
+    background: #ffebf1;
+    font-family: 'Indie Flower', cursive;
+    transition: 0.5s;
+}
+
+button.add{
+    width: 20%;
+    cursor: pointer;
+    background: #ae597a;
+    color: #ffebf1;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5rem;
+    border: none;
+    height: 60px;
+    border-top-right-radius: 10px ;
+    border-bottom-right-radius: 10px ;    
+}
+
+
+
+.add:hover{
+    opacity: 0.75;
+    background-image: linear-gradient(120deg, green,#ae597a, #ae597a, #ae597a,#ae597a, #ae597a,#ae597a, green);
+    border: 1px solid #ffebf1;
+}
+
+main{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 90%;
+    margin: auto auto;    
+    padding-top: 80px; 
+      
+}
+
+.item{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: #ffebf1;
+    height: 50px;
+    width: 100%;
+    box-shadow: 0 0 20px #ffebf1;
+    margin-bottom: 2%;    
+    border-bottom: 10px;
+    border-radius: 10px; 
+    cursor: pointer;
+}
+
+.item.clicado{
+    background: #d4f6d9;
+    background-image: linear-gradient(90deg,#9cfaaa, #d4f6d9,white);
+}
+
+.item.clicado .item-nome{
+    text-decoration: line-through;
+    color: gray;
+} 
+
+.item-icone{
+    flex: 5%;   
+    text-align: center;
+    font-size: 2rem;
+}
+
+.item-nome{
+    flex: 65%;    
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Indie Flower', cursive;
+}
+
+.item-botao{
+    flex: 15%;    
+}
+
+.delete{
+    background: #ae597a;
+    color: white;
+    border: none;
+    padding: 10px;
+    height: 50px;
+    width: 100%;
+    border-top-right-radius: 10px ;
+    border-bottom-right-radius: 10px ;  
+}
+
+.delete:hover{
+    opacity: 0.75;
+    border: 1px solid #ffebf1;
+    background-image: linear-gradient(120deg, red,#ae597a, #ae597a, #ae597a,#ae597a, #ae597a,#ae597a, red);
+}
+
+.mdi-check-circle{
+    color: green;
+}
